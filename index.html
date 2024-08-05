@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة موسى الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>صفحة موسى الشخصية</h1>
+        <nav>
+            <ul>
+                <li><a href="#work-gallery">معرض أعمالي</a></li>
+                <li><a href="#services">خدماتي</a></li>
+                <li><a href="#portfolio">أعمالي</a></li>
+                <li><a href="#chat">دردشة</a></li>
+                <li><a href="#challenges">تحديات</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="work-gallery">
+        <h2>معرض أعمالي</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="work1.jpg" alt="عمل 1">
+                <img src="work2.jpg" alt="عمل 2">
+                <img src="work3.jpg" alt="عمل 3">
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>خدماتي</h2>
+        <div class="service" id="content-writing">
+            <h3><a href="content-writing.html">كتابة المحتوى</a></h3>
+        </div>
+        <div class="service" id="graphic-design">
+            <h3><a href="graphic-design.html">تصميم الجرافيك</a></h3>
+        </div>
+        <div class="service" id="web-design">
+            <h3><a href="web-design.html">تصميم وإنشاء المواقع</a></h3>
+        </div>
+        <div class="service" id="digital-marketing">
+            <h3><a href="digital-marketing.html">تسويق إلكتروني</a></h3>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>أعمالي</h2>
+        <!-- محتوى أعمالك -->
+    </section>
+    
+    <section id="chat">
+        <h2>دردشة</h2>
+        <button onclick="openChat()">افتح الدردشة</button>
+        <div id="chat-box" style="display:none;">
+            <div class="chat-window">
+                <div class="messages">
+                    <!-- محتوى الدردشة -->
+                </div>
+                <input type="text" id="chat-input" placeholder="اكتب رسالتك...">
+                <button onclick="sendMessage()">إرسال</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="challenges">
+        <h2>تحديات</h2>
+        <a href="challenges.html">اكتشف التحديات</a>
+    </section>
+    
+    <section id="contact">
+        <h2>اتصل بي</h2>
+        <form id="contact-form">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="social-media">
+            <a href="https://telegram.me/username" target="_blank">تليجرام</a>
+            <a href="https://facebook.com/username" target="_blank">فيسبوك</a>
+            <a href="https://instagram.com/username" target="_blank">إنستاغرام</a>
+            <a href="https://wattpad.com/username" target="_blank">واتباد</a>
+        </div>
+        <p>&copy; جميع الحقوق محفوظة. تم تصميمة بواسطة موسى.</p>
+    </footer>
+</body>
+</html>
